@@ -66,15 +66,15 @@ In a terminal window, from within your project directory (`./go/src/github.com/<
 3. Target Cloud Foundry with IBM Cloud by using: `ibmcloud target --cf`
 4. Push your app into Cloud Foundry: `ibmcloud cf push`
 
-If the push is successful, your application will be created and you should see the following output (or something very similar) :clap:
+If the push is successful, your application will be created, and you should see the following output (or something very similar) :clap:
 
 ```bash
 Waiting for app to start...
 
-name:              Twitter-Joke-Bot
+name:              Web-Scraping-App
 requested state:   started
-routes:            twitter-joke-bot-persistent-hippopotamus.eu-gb.mybluemix.net
-last uploaded:     Thu 14 May 10:30:50 BST 2020
+routes:            web-scraping-app-persistent-hippopotamus.eu-gb.mybluemix.net
+last uploaded:     Thu 23 July 10:30:50 BST 2020
 stack:             cflinuxfs3
 buildpacks:        go
 
@@ -83,13 +83,11 @@ instances:       1/1
 memory usage:    128M
 start command:   ./bin/cmd
      state     since                  cpu    memory      disk      details
-#0   running   2020-05-14T09:31:04Z   0.0%   0 of 128M   0 of 1G   
+#0   running   2020-07-23T09:31:04Z   0.0%   0 of 128M   0 of 1G   
 ```
 
-To see your application running and have it output a joke, copy and paste the `routes` value from your output into a browser address bar and append `/showjoke` onto the end of it. 
+To see your application running and have it output something to the screen, copy and paste the `routes` value from your terminal output into a browser address bar. 
 
-Example: `twitter-joke-bot-persistent-hippopotamus.eu-gb.mybluemix.net/showjoke`
-
-![Running App URL](./../images/RunningAppURL.png)
+Example: `web-scraping-app-persistent-hippopotamus.eu-gb.mybluemix.net`
 
 The next stage of this workshop will be turning this simple web app into something that can scrape a web page, continue onto [Lab 4](./lab-4.md)
