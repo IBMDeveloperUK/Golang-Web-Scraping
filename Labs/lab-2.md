@@ -1,6 +1,6 @@
 # Lab 2 - Lets get RESTful :dancer: 
 
-In this lab you are going to create a web app with some routes. To do this you will use the `net/http` library. You will then extend this to output a random joke by calling an open API without the need for authentication. The API in this lab is a random dad joke API but feel free to explore and chose another if you'd like, the principals are the same!
+In this lab you are going to create a web app with a main route. To do this you will use the `net/http` package which is a native library in Go. This will allow you to make a simple http server and make requests.
 
 ### Step 1
 
@@ -47,7 +47,7 @@ http.ListenAndServe(":8080", nil)
 
 ### Step 3
 
-Head back to your terminal window and run your code using the command `go run cmd/main.go`. This will start up a server on port :8080.
+Head back to your terminal window and run your code using the command `go run main.go`. This will start up a server on port :8080.
 
 > **Note**: You may be prompted by your system to allow a network connection (you need to allow this otherwise the application may not run corretly)
 
@@ -55,6 +55,6 @@ Open up a browser and type `localhost:8080` into the top URL bar, and you should
 
 The server is up and running but this is very basic. Use `control+c` in your terminal to terminate the server connection.
 
-Now the server is ready, lets deploy this app and use the power of the cloud to build and process our requests. 
+Now the server is ready, lets deploy this app and use the power of the cloud to build and process our requests, freeing up local resources. 
 
 Continue to [Lab 3](./lab-3.md) to see how this is done.

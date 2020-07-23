@@ -42,7 +42,7 @@ ibmcloud cf install
 
 ## Step 2
 
-Now you need to prepare your application for Cloud Foundry. To do this, in the root directory of your project you will find a file called `manifest.yml`. This will be the building blocks for your application when pushing it up to the cloud. Inside this file add the following code. **Be sure to change/remove the commented code!**
+Now you need to prepare your application for Cloud Foundry. To do this, in the root directory of your project you will find a file called `manifest.yml`. This will be the building blocks for your application when pushing it up to the cloud. Inside this file add the following code. **Be sure to change/remove the commented code! (name & GO_INSTALL_PACKAGE_SPEC)**
 
 ```yaml
 ---
@@ -73,17 +73,17 @@ Waiting for app to start...
 
 name:              Web-Scraping-App
 requested state:   started
-routes:            web-scraping-app-persistent-hippopotamus.eu-gb.mybluemix.net
-last uploaded:     Thu 23 July 10:30:50 BST 2020
+routes:            web-scraping-app-grouchy-klipspringer-in.eu-gb.mybluemix.net
+last uploaded:     Thu 23 Jul 14:21:06 BST 2020
 stack:             cflinuxfs3
 buildpacks:        go
 
 type:            web
 instances:       1/1
 memory usage:    128M
-start command:   ./bin/cmd
+start command:   ./bin/web-scraping
      state     since                  cpu    memory      disk      details
-#0   running   2020-07-23T09:31:04Z   0.0%   0 of 128M   0 of 1G   
+#0   running   2020-07-23T13:21:20Z   0.0%   0 of 128M   0 of 1G     
 ```
 
 To see your application running and have it output something to the screen, copy and paste the `routes` value from your terminal output into a browser address bar. 

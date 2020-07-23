@@ -18,7 +18,7 @@ go mod init
 In some cases you may be asked to enter the project directory you wish to initialise. If so, the following _should_ work providing you are following the folder structure outlined in [Lab 0](./lab-0.md) and you have not changed the project name after cloning the repository.
 
 ```bash
-go mod init github.com/cloud-hosted-twitter-bot-workshop
+go mod init github.com/golang-web-scraping
 ```
 
 ### Step 2
