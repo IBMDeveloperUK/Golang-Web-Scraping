@@ -27,6 +27,9 @@ type Product struct {
 	Price string
 }
 
+/* Scrape is an exported function
+** This lets functions outside of the "actions" package call it (makes it globally visible)
+*/ 
 func Scrape(w http.ResponseWriter, r *http.Request) {
 	// Write the status code 200
 	w.WriteHeader(http.StatusOK)
@@ -104,3 +107,25 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 }
 
 ```
+
+> **Note**: You will notice the import `"github.com/gocolly/colly"`. This is a 3rd party import that has been written to make web scraping much easier.
+
+### Step 2
+
+Now the code is there, you need to add the function as a route on the sever.
+
+Just like you did in [Lab 2](./lab-2.md), you need to create a `http.HandleFunc()` in your `main()` function.
+
+Below the line `http.HandleFunc("/", home)` in your `main()` function in `main.go`, add the line, `http.HandleFunc("/scrape", actions.Scrape)`. Make sure the import for the actions package is also visible. If it is not in the `import` block, then add `"github.com/golang-web-scraping/pkg/actions"` (make sure the system path is correct for your instance).
+
+This line of code will call this function when the route `/scrape` is hit and print out the results.
+
+### Step 3
+
+Run the code in the cloud...
+
+1. Ensure all the code is saved.
+2. Ensure you are still signed in to your `ibmcloud` account from the terminal. If your are not logged in, follow the login instructions on [Lab 3](./lab-3.md) step 3.
+2. In your terminal, make sure you are in the root directory of your project and enter the command `ibmcloud cf push`. This will push the new code up to the project you already have running in `ibmcloud`.
+3. In the URL address bar of a web browser, enter the project address which can be found in the terminal output once the app has started. It will be the value of `routes`. This will show you the home route of your sever.
+4. Append `/scrape` to the end of the URL to see the output of the web scraping function.
