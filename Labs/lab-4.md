@@ -178,3 +178,5 @@ Run the code in the cloud...
 3. In the URL address bar of a web browser, enter the project address which can be found in the terminal output once the app has started. It will be the value of `routes`. This will show you the home route of the sever.
 4. Append `/scrape` to the end of the URL to see the output of the web scraping function.
 5. You should see the JSON output on the page for each product you are scraping.
+
+The next stage of this workshop will be writing a function to crawl and show you how they differ. Continue onto [Lab 5](./lab-5.md)
