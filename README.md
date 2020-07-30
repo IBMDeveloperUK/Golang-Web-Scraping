@@ -27,4 +27,4 @@ Learn how to scrape web content from HTML and see how web scraping differs to we
 [Lab-3-Up-In-The-Cloud]: ./Labs/lab-3.md
 [Lab-4-Scrape-The-Web]: ./Labs/lab-4.md
 [Lab-5-Crawl-The-Web]: ./Labs/lab-5.md
-[Conclusion]: ./Labs/lab-6.md
+[Conclusion]: ./Labs/conslusion.md
