@@ -2,6 +2,20 @@
 
 In this lab you are going to write a function to scrape a web page. It is important to understand that this is different to web crawling. Web scraping will copy the HTML and you can then programmatically target individual elements, whereas web crawling will follow embedded URLs until it reaches a page where no URLs are present.
 
+This is the product you will be analysing. You will be scraping 3 parts, the name, number of stars and the price.
+![ProductElements](../images/ProductElements.png)
+
+To do this, the code will search through the `HTML` and find the individual `<span>` tags we outline. It will then scrape the contents.
+
+You can see the `HTML` elements by using the webn browser inspector as this is client-side code.
+![ProductName](../images/ProductName.png)
+
+
+![ProcuctStars](../images/ProductStars.png)
+
+
+![ProductPrice](../images/ProductPrice.png)
+
 ### Step 1
 
 1. Navigate to the `/pkg/actions/scaping.go` file
