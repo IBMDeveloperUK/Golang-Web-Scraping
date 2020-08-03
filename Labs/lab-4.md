@@ -150,11 +150,11 @@ func FormatPrice(price *string) {
         // Count the number of £'s present in the string 
     	r := strings.Count(*price, "£")
     
-    	// If >1 £'s in the string, split it and return the 'now' price
-    	if r > 1 {
-    		splitStr := strings.Split(*price, "£")
-    		*price = splitStr[1]
-    	}
+    	// If >= 1 £'s in the string, split it and return the 'now' price
+    	if r >= 1 {
+        	splitStr := strings.Split(*price, "£")
+        	*price = "£" + splitStr[1]
+        }
 
 }
 
