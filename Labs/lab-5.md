@@ -2,6 +2,12 @@
 
 In this lab you are going to write a function to crawl a web page for its embedded URLs using its sitemap. Web crawling will follow any embedded links on a web page until it reaches a page where no more leading URLs are present. In this instance you will be doing a very simple crawl of the google.com sitemap.
 
+By visiting `https://www.google.com/sitemap.xml` you will see the site map index. This outlines all of the URL's present on this webpage.
+
+The code below is going to visit this page and then use the XML to capture the URL's. You will notice the code specifies `"//sitemapindex/sitemap/loc"` as its target element. This is where the URL is stored within the XML. Refer to the image below to see this.
+
+![SiteMapIndex](../images/SiteMapIndex.png)
+
 ### Step 1
 
 1. Navigate to the `/pkg/actions/crawl.go` file
