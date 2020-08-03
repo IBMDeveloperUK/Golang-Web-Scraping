@@ -7,7 +7,7 @@ This is the product you will be analysing. You will be scraping 3 parts, the nam
 
 To do this, the code will search through the `HTML` and find the individual `<span>` tags we outline. It will then scrape the contents.
 
-You can see the `HTML` elements by using the webn browser inspector as this is client-side code.
+You can see the `HTML` elements by using the browser inspector since this is client-side code.
 ![ProductName](../images/ProductName.png)
 
 
