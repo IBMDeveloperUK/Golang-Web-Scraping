@@ -2,6 +2,8 @@
 
 ## 1. Golang Installation
 
+> This workshop has been created using `go version go1.14.6 darwin/amd64`
+
 ### macOS
 
 To manually install the Go tools, use the official [Go documentation](https://golang.org/doc/install) and follow the instructions.
@@ -21,7 +23,7 @@ The following `wget` command makes use of [this open source repository](https://
 
 ```bash
 wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh \
-| bash -s -- --version 1.14.3
+| bash -s -- --version 1.14.6
 ```
 
 or
@@ -39,7 +41,7 @@ go version
 The output for this will will depend upon your system but we just care about the command running / showing the correct version. You should get the following output (or similar):
 
 ```bash
-go version go1.14.3 darwin/amd64
+go version go1.14.6 darwin/amd64
 ```
 
 Once Go is installed via which ever method you have chosen, it is **important** to ensure your system follows the folder tree shown below:
