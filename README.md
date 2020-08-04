@@ -3,7 +3,7 @@ Learn how to scrape web content from HTML and see how web scraping differs to we
 
 ## Prerequisites
 
-1. Golang system environment (v1.14.3)
+1. Golang system environment (v1.14.x)
 2. IBM Cloud account
 3. IBM Cloud & Cloud Foundry command line interface
 4. An IDE installed - Visual Studio Code + Go extension or JetBrains GoLand work best for Go development
