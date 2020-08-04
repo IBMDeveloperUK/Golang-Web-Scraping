@@ -185,7 +185,7 @@ func FormatStars(stars *string) {
 
 ### Step 4
 
-Now the helper functions have been written, go back to `Scrap()` function and uncomment the following two lines:
+Now the helper functions have been written, go back to `Scrape()` function and uncomment the following two lines:
 
 1. `format.FormatStars(&stars)`
 2. `format.FormatPrice(&price)`
