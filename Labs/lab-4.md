@@ -79,7 +79,7 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 			stars = e.ChildText("span.a-icon-alt")
 
 			// Call the helper function to format the stars into a float (decimal) e.g 4.8
-			format.FormatStars(&stars)
+			//format.FormatStars(&stars)
 
 			// In this case... the price
 			price = e.ChildText("span.a-price > span.a-offscreen")
@@ -90,7 +90,7 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 
 			// Format the price so it is readable - some prices may have a 'was' and a 'now' price
 			// This helper function will strip the old price from the string
-			format.FormatPrice(&price)
+			//format.FormatPrice(&price)
 
 			//fmt.Printf("Product Name: %s \nStars: %s \nPrice: %s \n", productName, stars, price)
 
@@ -147,9 +147,9 @@ We want the output to look something like...
 
 To do this, you need to write 2 helper functions. One for the price formatting and one for the stars formatting.
 
-This is really easy to do. Follow the next steps to do this for your project
+This is really easy to do. Follow the next steps in order to do this for your project:
 1. Navigate to the `/pkg/utils/format.go` file
-2. Add the following code snippet and read it carefully to understand what is happening. Make sure the import for the `utils` package is added in the `scraping.go` imports. If it is not there, the code will fail to compile. 
+2. Add the following code snippet and read it carefully to understand what is happening. Make sure the import for the `utils` package is added in the `scraping.go` imports. If it is not there, the code will fail to compile - (`"github.com/web-scraping/pkg/utils"`). 
 
 ```golang
 
@@ -182,7 +182,15 @@ func FormatStars(stars *string) {
 }
 
 ```
+
 ### Step 4
+
+Now the helper functions have been written, go back to `Scrape()` function and uncomment the following two lines:
+
+1. `format.FormatStars(&stars)`
+2. `format.FormatPrice(&price)`
+
+### Step 5
 
 Run the code in the cloud...
 
