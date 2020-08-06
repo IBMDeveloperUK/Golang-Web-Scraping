@@ -79,7 +79,7 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 			stars = e.ChildText("span.a-icon-alt")
 
 			// Call the helper function to format the stars into a float (decimal) e.g 4.8
-			//format.FormatStars(&stars)
+			//utils.FormatStars(&stars)
 
 			// In this case... the price
 			price = e.ChildText("span.a-price > span.a-offscreen")
@@ -90,7 +90,7 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 
 			// Format the price so it is readable - some prices may have a 'was' and a 'now' price
 			// This helper function will strip the old price from the string
-			//format.FormatPrice(&price)
+			//utils.FormatPrice(&price)
 
 			//fmt.Printf("Product Name: %s \nStars: %s \nPrice: %s \n", productName, stars, price)
 
