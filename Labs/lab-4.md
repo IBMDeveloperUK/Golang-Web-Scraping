@@ -79,7 +79,7 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 			stars = e.ChildText("span.a-icon-alt")
 
 			// Call the helper function to format the stars into a float (decimal) e.g 4.8
-			//utils.FormatStars(&stars)
+			//format.FormatStars(&stars)
 
 			// In this case... the price
 			price = e.ChildText("span.a-price > span.a-offscreen")
@@ -90,7 +90,7 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 
 			// Format the price so it is readable - some prices may have a 'was' and a 'now' price
 			// This helper function will strip the old price from the string
-			//utils.FormatPrice(&price)
+			//format.FormatPrice(&price)
 
 			//fmt.Printf("Product Name: %s \nStars: %s \nPrice: %s \n", productName, stars, price)
 
@@ -134,9 +134,11 @@ Below the line `http.HandleFunc("/", home)` in your `main()` function in `main.g
 
 This route handler will call the `Scrape()` function when the route `/scrape` is hit and print out the results to the screen.
 
+Push the application code up to Cloud Foundry just like you did in [Lab 3](./lab-3.md). Use the command `ibmcloud cf push` from within the root directory of the project.
+
 ### Step 3
 
-If you run the code as it is now, you will have a fairly jumbled output on some items. Items with a 'was' and a 'now' price may look like "£12.99£15.99", and the stars will be more than one float number e.g  "4.6 out of 5 stars".
+If you run the application as it is now, you will have a fairly jumbled output on some items. Items with a 'was', and a 'now' price may look like "£12.99£15.99", and the stars will be more than one float number e.g  "4.6 out of 5 stars".
  
 We want the output to look something like...
 {
@@ -192,7 +194,7 @@ Now the helper functions have been written, go back to `Scrape()` function and u
 
 ### Step 5
 
-Run the code in the cloud...
+Push the application code up to the cloud again...
 
 1. Ensure all the project code is saved.
 2. Ensure you are still signed in to your `ibmcloud` account from the terminal. If your are not logged in, follow the login instructions on [Lab 3](./lab-3.md) step 3.
