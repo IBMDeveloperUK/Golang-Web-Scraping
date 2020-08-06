@@ -66,4 +66,15 @@ Below the line `http.HandleFunc("/scrape", actions.Scrape)` in your `main()` fun
 
 This route handler will call the `Crawl()` function when the route `/crawl` is hit and print out the results to the screen.
 
-[Conslusion](./conslusion.md)
+### Step 3
+
+Just like before, push the application code up to the cloud again...
+
+1. Ensure all the project code is saved.
+2. Ensure you are still signed in to your `ibmcloud` account from the terminal. If your are not logged in, follow the login instructions on [Lab 3](./lab-3.md) step 3.
+2. In your terminal, make sure you are in the root directory of your project and enter the command `ibmcloud cf push`. This will push the new code up to the project you already have running in `ibmcloud`.
+3. In the URL address bar of a web browser, enter the project address which can be found in the terminal output once the app has started. It will be the value of `routes`. This will show you the home route of the sever.
+4. Append `/crawl` to the end of the URL to see the output of the web crawling function.
+5. You should see the number of active embedded links taken from the `google.com` site map.
+
+[Conclusion](./conclusion.md)
