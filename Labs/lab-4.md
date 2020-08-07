@@ -124,6 +124,8 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 
 > **Note**: You will notice the import `"github.com/gocolly/colly"`. This is a 3rd party import that has been written to make web scraping much easier.
 
+> **Note**: You may have also noticed the use of `&` and `*` operators throughout the code and wondered what they are. In Golang, these represent pointers (memory address locations). For some extra reading, code examples and understanding, more on this can be found at https://www.golang-book.com/books/intro/8
+
 ### Step 2
 
 Now the code is written, you need to add a function call into a route handler on the sever.
