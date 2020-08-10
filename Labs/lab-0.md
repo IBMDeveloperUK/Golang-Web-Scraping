@@ -63,7 +63,7 @@ If you are using a Windows machine and have installed Golang by using the `gox.x
 
 ## 2. IBM Cloud account registration
 
-Login or create an [IBM Cloud](http://ibm.biz/golang_workshop) account
+Login or create an [IBM Cloud](http://ibm.biz/golang_web) account
 
 ---
 
