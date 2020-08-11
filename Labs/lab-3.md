@@ -2,7 +2,7 @@
 
 In this lab you will deploy your application into a cloud environment. Because of its simplicity and ease, this lab will show you how to do this in IBM Cloud Foundry. 
 
-Before you can complete any of the next steps, you must either [sign up](http://ibm.biz/golang_workshop) for an IBM Cloud account or make sure you are [logged into](http://ibm.biz/golang_workshop) your existing one.
+Before you can complete any of the next steps, you must either [sign up](http://ibm.biz/golang_web) for an IBM Cloud account or make sure you are [logged into](http://ibm.biz/golang_workshop) your existing one.
 
 ## IBM Cloud Foundry deployment
 
