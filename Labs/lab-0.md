@@ -10,7 +10,8 @@ To manually install the Go tools, use the official [Go documentation](https://go
 
 or
 
-Follow this short [installation guide](https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/install-go) up the end of the section "Go Environment" if you're using `brew`.
+If you choose to use `brew`, follow this short [installation guide](https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/install-go)
+up to the heading "Go Modules". You only need to complete the first.  
 
 ### Windows
 
