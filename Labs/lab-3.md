@@ -2,7 +2,8 @@
 
 In this lab you will deploy your application into a cloud environment. Because of its simplicity and ease, this lab will show you how to do this in IBM Cloud Foundry. 
 
-Before you can complete any of the next steps, you must either [sign up](http://ibm.biz/golang_workshop) for an IBM Cloud account or make sure you are [logged into](http://ibm.biz/golang_workshop) your existing one.
+Before you can complete any of the next steps, you must either [sign up](http://ibm.biz/golang_web) for an IBM Cloud account or make sure you are logged in to your existing account in a terminal.
+If you have all of the tools installed then proceed to Step 2.
 
 ## IBM Cloud Foundry deployment
 
@@ -56,7 +57,7 @@ applications:
 
 ## Step 3
 
-In a terminal window, from within your project directory (`./go/src/github.com/<projectname>`), you are going to login to your IBM Cloud account, target Cloud Foundry and then push your application up. To do this, follow the simple steps that follow:
+In a terminal window, from within your project directory (`./go/src/github.com/<projectname>`), you are going to ensure you are logged in to your IBM Cloud account, target Cloud Foundry and then push your application up. To do this, follow the simple steps that follow:
 
 1. Make sure you are logged into IBM Cloud via the CLI: `ibmcloud login`
 
@@ -65,6 +66,8 @@ In a terminal window, from within your project directory (`./go/src/github.com/<
 2. Enter your IBM Cloud credentials when prompted
 3. Target Cloud Foundry with IBM Cloud by using: `ibmcloud target --cf`
 4. Push your app into Cloud Foundry: `ibmcloud cf push`
+
+**If you encounter an error with any of the commands above, please reach out to one of the mentors in the venue and we will assist you**
 
 If the push is successful, your application will be created, and you should see the following output (or something very similar) :clap:
 

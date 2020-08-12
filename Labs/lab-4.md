@@ -29,7 +29,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gocolly/colly"
-	"github.com/web-scraping/pkg/utils"
+	//"github.com/golang-web-scraping/pkg/utils"
 	"net/http"
 	"os"
 )
@@ -66,7 +66,7 @@ func Scrape(w http.ResponseWriter, r *http.Request) {
 		e.ForEach("div.a-section.a-spacing-medium", func(_ int, e *colly.HTMLElement) {
 			var productName, stars, price string
 
-			// ChildText extracts the sanaitsed string from the within the matched element
+			// ChildText extracts the sanitised string from the within the matched element
 			// In this case... the product name
 			productName = e.ChildText("span.a-size-medium.a-color-base.a-text-normal")
 
@@ -193,6 +193,7 @@ Now the helper functions have been written, go back to `Scrape()` function and u
 
 1. `format.FormatStars(&stars)`
 2. `format.FormatPrice(&price)`
+3. `"github.com/golang-web-scraping/pkg/utils"` (this line is in the imports)
 
 ### Step 5
 

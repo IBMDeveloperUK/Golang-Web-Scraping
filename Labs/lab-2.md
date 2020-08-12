@@ -25,7 +25,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 import (
     "fmt"
     "net/http"
-    "io/ioutil"
 
     // You can prefix imports to make it easier to reference them in your code, like this one
     logr "github.com/sirupsen/logrus"

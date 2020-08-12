@@ -9,6 +9,8 @@ In this very first Lab you will clone the repository of the project to make the 
 2. Clone your personal copy of the repository into `$HOME/<user>/go/github.com` on your machine and then open the project in your preferred editor. I use [Visual Studio Code](https://code.visualstudio.com/) with the recommended [Go extension](https://code.visualstudio.com/docs/languages/go) installed from the marketplace.
 ![clone repository](./../images/CloneRepository.png)
 ![git clone](../images/GitClone.png)
+(If Visual Studio Code is not on your `$PATH`, you may get an error with the command `code .` so just open the project as you would normally within the IDE - `File -> Open...`)
+
 3. You will be using the Go Modules to manage imports in this workshop so in the terminal, ensure you are in the root of the project directory and initialise it. To do this enter the follow commands:
 
 ```bash
